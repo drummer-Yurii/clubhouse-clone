@@ -1,8 +1,16 @@
 import './App.css';
+import PlanLayout from './pages/Layouts/PlanLayout';
+import Welcome from './pages/Welcome';
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
   return (
-    <h2>Let's build the Clubhouse Clone</h2>
+    <BrowserRouter>
+      <PlanLayout>
+        <Welcome />
+      </PlanLayout>
+    </BrowserRouter>
   );
 }
 
